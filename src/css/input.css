@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+
+    @theme {
+      --color-back-007: #00eee5;
+      --color-front-007: #0b0913;
+    }
+
+    body {
+      font-family: system-ui, sans-serif;
+    }
+
+    .menu-item {
+      @apply flex items-center gap-3 p-3 rounded-2xl border border-gray-400/30 cursor-pointer transition;
+      color: var(--color-front-007);
+    }
+
+    .menu-item:hover {
+      @apply bg-gray-100;
+    }
+
+    .menu-item.active {
+      @apply bg-black border-black;
+      color: var(--color-back-007);
+    }
+
+    .category-item {
+      @apply flex items-center gap-4 p-2 rounded-2xl bg-gray-300 cursor-pointer transition;
+    }
+
+    .category-item:hover {
+      @apply bg-orange-500 text-white;
+    }
+
+    .product-item {
+      @apply bg-white p-5 rounded-2xl relative transition hover:shadow-lg;
+    }

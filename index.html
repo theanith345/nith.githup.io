@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="bg-white" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krama</title>
+  <!-- CSS Style -->
+  <link rel="stylesheet" href="/src/css/output.css">
+  <!-- Tap Icon -->
+  <link rel="shortcut icon" href="/src/assets/icon.png" type="image/x-icon">
+  <!--  FontAwsome ICOn -->
+  <!--  Lucid ICON -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+  <div class="flex flex-wrap w-full h-screen">
+    <aside class="slibar-container overflow-y-scroll h-screen flex flex-col justify-between bg-back-007 w-[20%] p-5">
+      <div class="w-full pb-[200px]  bg-transparent">
+
+        <a href="#" class="fixed w-[350px] pt-3 bg-back-007 h-[150px] top-0">
+          <img class="w-[80%] h-full object-cover" src="/src/assets/logo.png" alt="">
+        </a>
+
+        <nav class="slibar-menu w-full pt-[150px] flex flex-col gap-3">
+          <a href="#" class="slibar-menu-item   active">
+            <i data-lucide="layout-dashboard"></i>
+            Dashboard
+          </a>
+          <a href="#" class="slibar-menu-item">
+            <i data-lucide="sandwich"></i>
+            Food Orders
+          </a>
+          <a href="#" class="slibar-menu-item">
+            <i data-lucide="message-circle-reply"></i>
+            Feedbacks
+          </a>
+          <a href="#" class="slibar-menu-item">
+            <i data-lucide="mail"></i>
+            Messages
+          </a>
+          <a href="#" class="slibar-menu-item">
+            <i data-lucide="clipboard-clock"></i>
+            Order History
+          </a>
+          <a href="#" class="slibar-menu-item">
+            <i data-lucide="circle-dollar-sign"></i>
+            Payment Details
+          </a>
+          <a href="#" class="slibar-menu-item">
+            <i data-lucide="sliders-horizontal"></i>
+            Customization
+          </a>
+        </nav>
+      </div>
+
+      <div class="card  bg-front-007 p-5 rounded-3xl w-full shadow-sm">
+        <img class="rounded-3xl" src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+          alt="Shoes" />
+        <div class="card-body p-0 text-back-007">
+          <h2 class="card-title pt-3">How to order food?</h2>
+          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          <div class="card-actions justify-start">
+            <button class=""><i data-lucide="circle-chevron-left"></i></button>
+            <button class=""><i data-lucide="circle-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- section header  -->
+<div class="w-[80%] bg-gray-200 overflow-hidden h-screen  ">
+   <!--  Header Section  -->
+    <header class=" bg-back-007 justify-between items-center flex h-[100px] w-full p-3">
+      <div class="searchbox w-[400px] flex gap-2">
+        <input type="text" name="" placeholder="Search food"
+          class="rounded-[10px] outline-none px-6 text-front-007 placeholder:text-front-007 w-[300px] bg-gray-200 h-[50px]  "
+          id=""/>
+        <button
+          class="bg-orange-700 flex cursor-pointer text-md font-bold gap-3 items-center justify-center rounded-xl h-[50px] p-2"
+          type="button">Filter <i data-lucide="sliders-horizontal"></i></button>
+      </div>
+
+      <div class="box-right w-[300px] justify-end gap-5   flex items-center overflow-hidden">
+        
+        <button type="button" class="notification relative text-front-007"><i data-lucide="bell"></i>
+        <span class="absolute flex justify-center items-center text-white top-[-10px] bg-red-500 rounded-full p-2 w-[20px] h-[20px] -right-[10px] ">5</span>
+        </button>
+        <div class="profile border bg-gray-100 p-2 border-gray-400 rounded-[10px] flex gap-2 text-front-007 items-center">
+            <img class="w-[40px]  h-[40px] rounded-full object-cover" src="https://i.pinimg.com/736x/6d/e1/90/6de19074ade9d6d0f9e8419364cac393.jpg" alt=""/>  <h1 class="text-front-007">Jonh Doe</h1> <i data-lucide="chevron-down"></i> 
+        </div>
+      </div>
+    </header>
+   
+     <div class="w-full flex  flex-wrap justify-between p-5 gap-5">
+
+      <!-- Central section -->
+      <div class="w-[76%]  ">
+         <!--  Category section  -->
+    <div class="category-container  w-full">
+      
+        <h1 class="text-2xl font-bold text-left text-front-007">Explore Categories</h1>
+         <div class="category-list w-full rounded-3xl mt-5 flex justify-start flex-wrap gap-5 ">
+              <div class="category-item hover:bg-orange-500 duration-500 cursor-pointer w-[170px] gap-5 pr-5 flex items-center  bg-gray-300 rounded-2xl p-2">
+                <div class="bg-gray-200 rounded-2xl p-2">
+                   <img src="/src/assets/buger.png" alt="">
+                </div>
+                  <div class="title text-front-007 text-lg font-medium">Buger</div>
+              </div> 
+               <div class="category-item w-[170px] hover:bg-orange-500 duration-500 cursor-pointer gap-5 pr-5 flex items-center  bg-gray-300 rounded-2xl p-2">
+                <div class="bg-gray-200 rounded-2xl p-2">
+                   <img src="/src/assets/ice-cream.png" alt="">
+                </div>
+                  <div class="title text-front-007 text-lg font-medium">Ice Cream</div>
+              </div> 
+               <div class="category-item w-[170px] hover:bg-orange-500 duration-500 cursor-pointer gap-5 flex  pr-5 items-center  bg-gray-300 rounded-2xl p-2">
+                <div class="bg-gray-200 rounded-2xl p-2">
+                   <img src="/src/assets/soft-drink.png" alt="">
+                </div>
+                  <div class="title text-front-007 text-lg font-medium">Drink</div>
+              </div> 
+               <div class="category-item w-[170px] hover:bg-orange-500 duration-500 cursor-pointer gap-5 flex pr-5 items-center  bg-gray-300 rounded-2xl p-2">
+                <div class="bg-gray-200 rounded-2xl p-2">
+                   <img src="/src/assets/ice-cream.png" alt="">
+                </div>
+                  <div class="title text-front-007  text-lg font-medium">Pizza</div>
+              </div> 
+               <div class="category-item w-[170px] hover:bg-orange-500 duration-500 cursor-pointer gap-5 flex pr-5 items-center  bg-gray-300 rounded-2xl p-2">
+                <div class="bg-gray-200 rounded-2xl p-2">
+                   <img src="/src/assets/donut.png" alt="">
+                </div>
+                  <div class="title text-front-007 text-lg font-medium">Donuts</div>
+              </div> 
+               <div class="category-item w-[170px] hover:bg-orange-500 duration-500 cursor-pointer gap-5 flex pr-5 items-center  bg-gray-300 rounded-2xl p-2">
+                <div class="bg-gray-200 rounded-2xl p-2">
+                   <img src="/src/assets/food.png" alt="">
+                </div>
+            <div class="title text-front-007 text-lg font-medium">Food</div>
+              </div> 
+              <div class="category-item w-[170px] hover:bg-orange-500 duration-500 cursor-pointer gap-5 flex pr-5 items-center  bg-gray-300 rounded-2xl p-2">
+                <div class="bg-gray-200 rounded-2xl p-2">
+                   <img src="/src/assets/ice-cream.png" alt="">
+                </div>
+            <div class="title text-front-007 text-lg font-medium">Desert</div>
+             </div> 
+              <div class="category-item w-[170px] hover:bg-orange-500 duration-500 cursor-pointer gap-5 flex pr-5 items-center  bg-gray-300 rounded-2xl p-2">
+                <div class="bg-gray-200 rounded-2xl p-2">
+                   <img src="/src/assets/buger.png" alt="">
+                </div>
+                  <div class="title text-front-007 text-lg font-medium">Noo Dles</div>
+              </div> 
+              <div class="category-item w-[170px] hover:bg-orange-500 duration-500 cursor-pointer gap-5 flex pr-5 items-center  bg-gray-300 rounded-2xl p-2">
+                <div class="bg-gray-200 rounded-2xl p-2">
+                   <img src="/src/assets/buger.png" alt="">
+                </div>
+                  <div class="title text-front-007 text-lg font-medium">Noo Dles</div>
+              </div> 
+              <div class="category-item w-[170px] hover:bg-orange-500 duration-500 cursor-pointer gap-5 flex pr-5 items-center  bg-gray-300 rounded-2xl p-2">
+                <div class="bg-gray-200 rounded-2xl p-2">
+                   <img src="/src/assets/buger.png" alt="">
+                </div>
+                  <div class="title text-front-007 text-lg font-medium">Noo Dles</div>
+              </div> 
+              <div class="category-item w-[170px] hover:bg-orange-500 duration-500 cursor-pointer gap-5 pr-5 flex items-center  bg-gray-300 rounded-2xl p-2">
+                <div class="bg-gray-200 rounded-2xl p-2">
+                   <img src="/src/assets/food.png" alt="">
+                </div>
+                  <div class="title text-front-007 text-lg font-medium">Fast Food</div>
+              </div>
+              <div class="category-item w-[170px] hover:bg-orange-500 duration-500 cursor-pointer gap-5 flex pr-5 items-center  bg-gray-300 rounded-2xl p-2">
+                <div class="bg-gray-200 rounded-2xl p-2">
+                   <img src="/src/assets/buger.png" alt="">
+                </div>
+                  <div class="title text-front-007 text-lg font-medium">Buger</div>
+              </div>               
+         </div>
+    </div>
+
+    <!--  Product Popular && Recent  -->
+
+    <div class="tap flex justify-start items-center gap-5 mt-3 ">
+          <button type="button" class="text-front-007 activeTap  py-2 text-2xl font-bold" >Popular</button>
+           <button type="button" class="text-front-007 py-2 text-2xl font-bold">Recent</button>
+    </div>
+
+    <!-- Product All -->
+     <div class="product-container gap-7  flex justify-end items-center flex-wrap pt-10">
+         <div class="product-item w-[350px] bg-white p-5 rounded-2xl relative">
+        <input type="checkbox" checked="checked" class="checkbox absolute top-10 left-10 checkbox-warning" />
+             <img class="rounded-2xl w-full h-[290px] object-cover" src="https://i.pinimg.com/1200x/c4/40/0f/c4400f1f2c8441cb7c6eea6844a79135.jpg" alt="">
+             <h1 class="title text-2xl font-bold text-front-007 pt-2">Fastfood</h1>
+             <div class="">
+              <p class="price text-xl font-bold text-orange-500">$80<span class="des pl-3 line-through text-[15px] text-gray-700">$30.00</span> </p>
+               <div class="flex justify-between mt-1 items-center flex-wrap">
+                  <button type="button" class="rounded-2xl px-10 text-front-007 py-3  bg-gray-200" >Wishlist</button>
+                   <button type="button" class="bg-orange-500 rounded-2xl px-7 py-3" >Order Now</button>
+               </div>
+            </div>
+         </div>
+         <div class="product-item w-[350px] group bg-white p-5 checked:border border-orange-500 rounded-2xl relative">
+           <input type="checkbox" checked="checked" class="checkbox group-checked: absolute top-10 left-10 checkbox-warning" />
+          
+             <img class="rounded-2xl w-full  object-cover h-[290px]" src="https://i.pinimg.com/1200x/c4/40/0f/c4400f1f2c8441cb7c6eea6844a79135.jpg" alt="">
+             <h1 class="title text-2xl font-bold text-front-007 pt-5">Fastfood</h1>
+             <div class="">
+              <p class="price text-xl font-bold text-orange-500">$80<span class="des pl-3 line-through text-[15px] text-gray-700">$30.00</span> </p>
+               <div class="flex justify-between mt-1 items-center flex-wrap">
+                  <button type="button" class="rounded-2xl px-10 text-front-007 py-3 bg-gray-200" >Wishlist</button>
+                   <button type="button" class="bg-orange-500 rounded-2xl px-7 py-3" >Order Now</button>
+               </div>
+            </div>
+         </div>
+         <div class="product-item w-[350px] bg-white p-5 rounded-2xl relative">
+           <input type="checkbox" checked="checked" class="checkbox absolute top-10 left-10 checkbox-warning" />
+          
+             <img class="rounded-2xl w-full h-[290px] object-cover" src="https://i.pinimg.com/1200x/c4/40/0f/c4400f1f2c8441cb7c6eea6844a79135.jpg" alt="">
+             <h1 class="title text-2xl font-bold text-front-007 pt-5">Fastfood</h1>
+             <div class="">
+              <p class="price text-xl font-bold text-orange-500">$80<span class="des pl-3 line-through text-[15px] text-gray-700">$30.00</span> </p>
+               <div class="flex justify-between mt-1 items-center flex-wrap">
+                  <button type="button" class="rounded-2xl px-10 text-front-007 py-3 bg-gray-200" >Wishlist</button>
+                   <button type="button" class="bg-orange-500 rounded-2xl px-7 py-3" >Order Now</button>
+               </div>
+            </div>
+         </div>
+         
+     </div>
+    </div>
+    <!-- Invoice Section  -->
+    <div class="w-[22%]  ">
+        <div class="invoice-container w-full bg-back-007 rounded-3xl p-5">
+             <h1 class="text-2xl font-bold text-center underline text-front-007">Invoice</h1>
+             <div class="invoice-list pt-5 gap-4 flex  flex-wrap w-full ">
+              
+               
+
+                  <div class="category-item gap-5 w-full flex items-center  bg-gray-100 rounded-2xl p-2">
+                <div class="bg-gray-200 rounded-2xl p-2">
+                   <img src="/src/assets/soft-drink.png" alt="">
+                </div>
+                <div class="">
+                  <p class="title text-front-007 text-xl font-bold">Drink</p>
+                  <p class="text-orange-700 text-xl font-bold">$10</p>
+                  </div>
+                </div> 
+                 <a href="#" class="text-center text-orange-500 " >View All</a>
+                <div class="border-2 border-front-007 text-front-007 w-full  border-dashed rounded-2xl p-5 bg-gray-300">
+                     <h1 class="text-xl pb-5">Payment Summary</h1>
+                      <div class="w-full text-front-007 flex flex-col border-b border-gray-400 gap-4">
+                          <div class="w-full flex justify-between">
+                            <p>SubTotal :</p>
+                            <p>$50</p>
+                        </div>
+                         <div class="w-full flex justify-between">
+                            <p>Tax :</p>
+                            <p>-$5</p>
+                       </div>
+                        </div>
+                         <div class="w-full pb-5 flex justify-between">
+                            <p>Total Payment :</p>
+                            <p>$45</p>
+                       </div>
+
+                        <h1 class="text-xl font-bold pb-5">Payment Method</h1>
+                     <div class="w-full flex flex-wrap items-center justify-center gap-2 ">
+                        <div class="bg-white w-[100px] p-5 rounded-2xl">
+                            <img class="w-full" src="/src/assets/mastercard.png" alt="">
+                        </div>
+                        <div class="bg-white w-[100px] p-5 rounded-2xl">
+                            <img class="w-full" src="/src/assets/paypal.png" alt="">
+                        </div>
+                        <div class="bg-white w-[100px] p-5 rounded-2xl">
+                            <img class="w-full" src="/src/assets/visa.png" alt="">
+                        </div>
+                        <div class="bg-white w-[100px] p-5 rounded-2xl">
+                            <img class="w-full" src="/src/assets/ebay.png" alt="">
+                        </div>
+                     </div>
+                </div>  
+
+                <button type="button" class="bg-orange-500  border-0 w-full text-xl font-bold text-white rounded-2xl px-5 py-5" >Please An Order Now</button>
+             </div>
+        </div>
+    </div>
+    
+    </div>
+    </div>
+  </div>
+
+</body>
+<script>
+  lucide.createIcons();
+</script>
+
+</html>
